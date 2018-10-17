@@ -9,8 +9,4 @@ def angle(angle,per_rotation_second):
 
     return output
 
-
-
 print(angle(45,2))
-
-#cloud.google.com/visionrmls
