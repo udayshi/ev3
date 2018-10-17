@@ -17,3 +17,16 @@ while not ts.value():    # Stop program by pressing touch sensor button
     #Sound.speak(colors[cl.value()]).wait()
     sleep(1)
 Sound.beep()
+
+
+
+# Put the color sensor into RGB mode.
+cl.mode='RGB-RAW'
+
+while not ts.value():    # Stop program by pressing touch sensor button
+    red = cl.value(0)
+    green=cl.value(1)
+    blue=cl.value(2)
+    print("Red: " + str(red) + ", Green: " + str(green) + ", Blue: " + str(blue))
+    sleep(1)
+Sound.beep()
