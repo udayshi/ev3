@@ -5,7 +5,7 @@ from PIL import Image
 
 lcd = Screen()
 
-logo = Image.open('pics/Bomb.bmp')
+logo = Image.open('pics/uday.jpg')
 lcd.image.paste(logo, (0,0))
 lcd.update()
 sleep(5)
