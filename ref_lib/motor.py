@@ -11,9 +11,9 @@ sleep(5)   # Give the motor time to move
 
 
 m.run_timed(time_sp=3000, speed_sp=-750)
-print("set speed (speed_sp) = " + str(m.speed_sp))
 sleep(1)  # it takes a moment for the motor to start moving
 print("actual speed = " + str(m.speed))
+print("set speed (speed_sp) = " + str(m.speed_sp)).wait()
 sleep(4)
 
 
